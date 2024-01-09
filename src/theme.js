@@ -1,4 +1,4 @@
-import { createContext, useState, useMemo } from 'react';
+import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/material/styles";
 
 
@@ -128,7 +128,7 @@ export const themeSettings = (mode) => {
     return {
         palette: {
             mode: mode,
-            ...colors(mode === 'dark'
+            ...(mode === 'dark'
                 ? {
                     primary: {
                         main: colors.primary[500],
